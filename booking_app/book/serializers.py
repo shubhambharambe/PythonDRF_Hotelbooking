@@ -15,7 +15,7 @@ class RoomSerializer(serializers.ModelSerializer):
 
 class BookingSerializer(serializers.ModelSerializer):
     user = serializers.ReadOnlyField(source='user.username')
-    room = serializers.PrimaryKeyRelatedField(queryset=Room.objects.all())  # Use room ID
+    room = serializers.PrimaryKeyRelatedField(queryset=Room.objects.all())  
     class Meta:
         model = Booking
         fields = '__all__'
