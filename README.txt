@@ -56,7 +56,6 @@ The refresh token is valid for 1 day.
 
 Endpoint: POST /api/bookings/
 {
-    "hotel": 4,  
     "room_type": 2,  
     "start_date": "2024-11-18",  
     "end_date": "2024-11-23"  
